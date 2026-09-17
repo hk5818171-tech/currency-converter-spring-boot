@@ -1,0 +1,245 @@
+/* =========================
+   Global Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top left, #dbeafe, transparent 35%),
+        radial-gradient(circle at bottom right, #ccfbf1, transparent 35%),
+        #f8fafc;
+
+    color: #0f172a;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #0f172a;
+}
+
+
+/* =========================
+   Converter Card
+========================= */
+
+.converter {
+    background: rgba(255, 255, 255, 0.85);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.12);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================
+   Labels
+========================= */
+
+.converter label {
+    display: block;
+
+    margin-bottom: 8px;
+    margin-top: 18px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #334155;
+}
+
+.converter label:first-child {
+    margin-top: 0;
+}
+
+
+/* =========================
+   Input & Select
+========================= */
+
+.converter input,
+.converter select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Focus Effect */
+
+.converter input:focus,
+.converter select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   Convert Button
+========================= */
+
+#convertBtn {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Hover */
+
+#convertBtn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Click */
+
+#convertBtn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Result
+========================= */
+
+#result {
+    margin-top: 22px;
+
+    padding: 16px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #1e40af;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 27px;
+    }
+
+    .converter {
+        padding: 22px;
+    }
+}
+#swapBtn {
+    display: block;
+    margin: 14px auto;
+    padding: 9px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#swapBtn:hover {
+    background: #eff6ff;
+    border-color: #2563eb;
+    transform: scale(1.03);
+}
+
+#swapBtn:active {
+    transform: scale(0.98);
+}
+#exchangeRate {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748b;
+}
